@@ -1,0 +1,15 @@
+<button>Before</button>
+<script>
+var btn = document.getElementsByTagName('button')[0];
+   btn.addEventListener('click', function(e) {
+      console.log(e);
+      document.getElementsByTagName('button')[0].innerHTML = 'After';
+
+      setTimeout(function() {
+         document.getElementsByTagName('button')[0].innerHTML = 'Before';
+      }, 2000);
+   }
+);
+</script>
+
+
